@@ -11,17 +11,20 @@
   </head>
 
   <body>
+    <header> 
     <%- include('partials/_header') %>
-    <main style="margin: 1em;">
-      <h3>Login</h3>
-      <form action="/login" method="POST">
-        <div class="form-group mb-2">
-          <label for="email">Email address</label>
-          <input class="form-control mb-3" type="email" name="email" placeholder="Enter email" style="width: 300px">
-          <label for="password">Password</label>
-          <input class="form-control mb-3" type="password" name="password" placeholder="Enter password" style="width: 300px">
-          <button type="submit" class="btn btn-primary">Login</button>
-        </div>
+    </header>
+
+    <main style="margin: 1em">
+      <h3 style="text-align: left">Login</h3>
+      <form class="form" action="/login" method="POST">
+        <!-- <div class="form-group mb-2"> -->
+          <label for="email" style="margin-top: 1.5em">Email  address</label>
+          <input class="form-control" type="email" name="email" placeholder="user@example.com" style="width: 300px;">
+          <label for="password" style="margin-top:1.5em">Password</label>
+          <input class="form-control" type="password" name="password" placeholder="password" style="width: 300px;">
+          <button type="submit" class="btn btn-info" style="margin-top: 1.5em;">Login</button>
+        <!-- </div> -->
       </form>
     </main>
       <!-- Bootstrap JS -->
